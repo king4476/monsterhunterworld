@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav_button{
+    width: 70%;
+    height: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_btn{
+   border: none;
+   width : 15%;
+   height :65%;
+}
+.small_monster{
+    display: none;
+}
+
+.environment_biology{
+    display: none;
+}
+
+.layout{
+    
+}
+
+.big{
+    
+}
+
+.small{
+    display: none;
+}
+.env{
+    display: none;
+}
