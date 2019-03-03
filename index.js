@@ -42,21 +42,35 @@ function init(data) {
   for (let i = 0; i < 113; i++) {
     if (data[i].gubun === "대형") {
       $("#monster").append(
-        `<div class="layout big"><p>${data[i].name}</p><img src=${
+        `<div class="layout big"><img src=${
           data[i].image
-        } alt=""></div>`
+        } alt=""> <div class="bg">
+          <p>${data[i].nick}</p>
+          <p>${data[i].name}</p>
+          <p>${data[i].description}</p>
+          <p>${data[i].hunt_info}</p>
+          <p>폭발${data[i].debuff.explosion}</p>
+          <p>기절${data[i].debuff.faint}</p>
+          <p>마비${data[i].debuff.paralysis}</p>
+          <p>독${data[i].debuff.poison}</p>
+          <p>수면${data[i].debuff.sleep}</p>
+          <p>${data[i].location}</p>
+          </div>
+        </div>`
       );
     } else if (data[i].gubun === "소형") {
       $("#monster").append(
-        `<div class="layout small"><p>${data[i].name}</p><img src=${
+        `<div class="layout small"><img src=${
           data[i].image
-        } alt=""></div>`
+        } alt=""><p>${data[i].name}</p>
+        <p>${data[i].location}</p>
+        </div>`
       );
     } else if (data[i].gubun === "환경") {
       $("#monster").append(
-        `<div class="layout env"><p>${data[i].name}</p><img src=${
+        `<div class="layout env"><img src=${
           data[i].image
-        } alt=""></div>`
+        } alt=""><p>${data[i].name}</p></div>`
       );
     }
   }
@@ -66,7 +80,7 @@ function init(data) {
 function big() {
   $("#big").click(function(e) {
     e.preventDefault();
-    $(".big").css("display", "block");
+    $(".big").css("display", "inline-block                                              ");
     $(".small").css("display", "none");
     $(".env").css("display", "none");
     console.log(123)

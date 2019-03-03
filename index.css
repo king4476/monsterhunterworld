@@ -28,16 +28,31 @@ html, body{
 }
 
 .layout{
+    width: 30%;
+    height: 100%;
+    display: inline-block;  
+    text-align: center;
     
 }
-
+.layout big{
+   
+}
 .big{
-    
+
 }
+    
+
 
 .small{
     display: none;
 }
 .env{
     display: none;
+}
+.bg{
+    width: 50%;
+    height: 10%;
+    margin: 30px;
+        border: 30px solid #000000;
+        padding: 30px;
 }
