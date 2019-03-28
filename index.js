@@ -80,7 +80,7 @@ function init(data) {
 function big() {
   $("#big").click(function(e) {
     e.preventDefault();
-    $(".big").css("display", "inline-block                                              ");
+    $(".big").css("display", "inline-block");
     $(".small").css("display", "none");
     $(".env").css("display", "none");
     console.log(123)
